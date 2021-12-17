@@ -29,5 +29,14 @@ namespace VendorOrderTracker.Tests
       Assert.AreEqual(name, result);
     }
 
+    [TestMethod]
+    public void GetDescription_ReturnsDescription_String()
+    {
+      string description = "Vendor1 description";
+      Vendor newVendor = new Vendor("Vendor1", description);
+      string result = newVendor.Description;
+      Assert.AreEqual(description, result);
+    }
+
   }
 }
