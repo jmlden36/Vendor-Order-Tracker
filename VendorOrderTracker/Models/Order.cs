@@ -9,7 +9,7 @@ namespace VendorOrderTracker.Models
     public double Price { get; set; }
     public string Date { get; set; }
     public int Id { get; }
-    public static List<Order> _instances = new List<Order> {};
+    private static List<Order> _instances = new List<Order> {};
     public Order(string name, string description, double price, string date)
     {
       Name = name;
