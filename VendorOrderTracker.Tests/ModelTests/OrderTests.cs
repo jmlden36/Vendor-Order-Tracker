@@ -28,5 +28,17 @@ namespace VendorOrderTracker.Tests
       string result = newOrder.Name;
       Assert.AreEqual(name, result);
     }
+
+    [TestMethod]
+    public void SetName_SetName_String()
+    {
+      string name = "Jim Saucejar";
+      Order newOrder = new Order(name, "Order description", 12, "2005-06-07");
+      
+      string updatedName = "Tom Burntag";
+      newOrder.Name = updatedName;
+      string result = newOrder.Name;
+      Assert.AreEqual(updatedName, result);
+    }
   }
 }
