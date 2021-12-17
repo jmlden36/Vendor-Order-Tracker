@@ -61,5 +61,26 @@ namespace VendorOrderTracker.Tests
       string result = newOrder.Description;
       Assert.AreEqual(updatedDescription, result);
     }
+
+    [TestMethod]
+    public void GetPrice_ReturnsPrice_Double()
+    {
+      double price = 5.79;
+      Order newOrder = new Order("Vendor1", "Order description", price, "2005-06-07");
+      double result = newOrder.Price;
+      Assert.AreEqual(price, result);
+    }
+
+    [TestMethod]
+    public void SetPrice_SetPrice_Double()
+    {
+      double price = 5.79;
+      Order newOrder = new Order("Vendor1", "Order description", price, "2005-06-07");
+      
+      double updatedPrice = 10;
+      newOrder.Price = updatedPrice;
+      double result = newOrder.Price;
+      Assert.AreEqual(updatedPrice, result);
+    }
   }
 }
