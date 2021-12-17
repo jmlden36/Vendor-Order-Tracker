@@ -19,5 +19,14 @@ namespace VendorOrderTracker.Tests
       Order newOrder = new Order("Vendor1", "Order description", 12, "2005-06-07");
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
+    
+    [TestMethod]
+    public void GetName_ReturnsName_String()
+    {
+      string name = "Jim Saucejar";
+      Order newOrder = new Order(name, "Order description", 12, "2005-06-07");
+      string result = newOrder.Name;
+      Assert.AreEqual(name, result);
+    }
   }
 }
