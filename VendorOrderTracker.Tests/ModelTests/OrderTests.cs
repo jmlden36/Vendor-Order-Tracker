@@ -40,5 +40,26 @@ namespace VendorOrderTracker.Tests
       string result = newOrder.Name;
       Assert.AreEqual(updatedName, result);
     }
+
+    [TestMethod]
+    public void GetDescription_ReturnsDescription_String()
+    {
+      string description = "for a wedding";
+      Order newOrder = new Order("Vendor1", description, 12, "2005-06-07");
+      string result = newOrder.Description;
+      Assert.AreEqual(description, result);
+    }
+
+    [TestMethod]
+    public void SetDescription_SetDescription_String()
+    {
+      string description = "for a wedding";
+      Order newOrder = new Order("Vendor1", description, 12, "2005-06-07");
+      
+      string updatedDescription = "nut allergy";
+      newOrder.Description = updatedDescription;
+      string result = newOrder.Description;
+      Assert.AreEqual(updatedDescription, result);
+    }
   }
 }
