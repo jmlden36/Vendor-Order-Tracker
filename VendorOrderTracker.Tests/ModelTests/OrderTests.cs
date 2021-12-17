@@ -133,5 +133,19 @@ namespace VendorOrderTracker.Tests
 
       CollectionAssert.AreEqual(newList, result);
     }
+
+    [TestMethod]
+    public void GetId_OrdersInstantiateWithAnIdAndGetterReturns_Int()
+    {
+      string name = "Vendor1";
+      string description = "Vendor1 description";
+      double price = 12.33;
+      string date = "2000-02-02";
+      Order newOrder = new Order(name, description, price, date);
+
+      int result = newOrder.Id;
+
+      Assert.AreEqual(1, result);
+    }
   }
 }
