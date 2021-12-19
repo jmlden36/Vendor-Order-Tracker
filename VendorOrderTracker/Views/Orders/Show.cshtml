@@ -1,11 +1,16 @@
-<h1>Order Details: </h1>
+@{
+  Layout = "_Layout";
+}
 
-
+<h3>Vendor: @Model["vendor"].Name</h3>
+<h1>Order Details:</h1>
+<br>
 <h2>Order name: @Model["order"].Name</h2>
 <h2>Order description: @Model["order"].Description</h2>
 <h2>Order price: @Model["order"].Price</h2>
 <h2>Order date: @Model["order"].Date</h2>
-<h3>Vendor: @Model["vendor"].Name</h3>
 
-<a href='/vendors/@Model["vendor"].Id/orders/new'>Add another order</a>
-<a href='/vendors'>View all vendors</a>
+<a href='/vendors/@Model["vendor"].Id/orders/new' class="btn-primary">Add another order</a>
+<br>
+<br>
+<a href='/vendors' class="btn-success">View all vendors</a>

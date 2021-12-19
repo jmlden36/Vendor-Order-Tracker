@@ -1,6 +1,10 @@
-<h1>Add a vendor</h1>
-<p>Hey Pierre!  Add a vendor here:</p>
+@{
+  Layout = "_Layout";
+}
 
+<h1>Add a vendor</h1>
+<h3>Hey Pierre!  Add a vendor here:</h3>
+<br>
 <form action="/" method="post">
   <label for="vendorName">Vendor name</label>
   <input id="vendorName" name="vendorName" type="text">
@@ -8,6 +12,9 @@
   <input id="vendorDescription" name="vendorDiscription" type="text">
   <button type="submit">Add</button>
 </form>
-
-<p><a href="/">Back home</a></p>
-<p><a href="/vendors">Back to vendors.</a></p>
+<br>
+<br>
+<a href="/" class="btn-success">Back home</a>
+<br>
+<br>
+<a href="/vendors" class="btn-success">Back to vendors.</a>

@@ -1,6 +1,10 @@
 @using VendorOrderTracker.Models;
+@{
+  Layout = "_Layout";
+}
 
 <h1>Orders</h1>
+<br>
 @if (Model.Count == 0)
 {
   <p>There are no orders for this vendor</p>
@@ -12,4 +16,5 @@
   }
   
 </ul>
-<a href="/orders/new">Add a new order for this vendor</a>
+<br>
+<a href="/orders/new" class="btn-primary">Add a new order for this vendor</a>

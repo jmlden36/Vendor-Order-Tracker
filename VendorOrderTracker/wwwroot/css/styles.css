@@ -1,0 +1,56 @@
+body {
+  background-color: cornsilk;
+}
+
+.container {
+  display: flex;
+  height: 300px;
+}
+
+.content {
+  position: relative;
+}
+#sidebar {
+  width: 250px;
+  margin-right: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  text-align: left;  
+  border-radius: 3px;
+  background-color: lightgrey;
+}
+#sidebarcontents {
+  padding: 5px 0px 5px 0px;
+}
+
+#sidebartitle {
+  text-align: center;
+}
+
+div#footer {
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  width:100%;
+  color:#CCC;
+  background:#333;
+  padding:8px;
+}
+
+.jumbotron{
+  background-color: rgb(154, 187, 218);
+}
+
+.btn-success {
+  border-radius: 6px;
+  padding: 4px;
+  margin: 4px;
+}
+
+.btn-primary {
+  border-radius: 6px;
+  padding: 4px;
+  margin: 4px;
+}

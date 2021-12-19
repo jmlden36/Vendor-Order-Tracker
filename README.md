@@ -33,12 +33,13 @@ _Vendor Order Tracker is an application designed to allow the user to create and
 * _Type the command "dotnet run" to start the application_
 * _Click to add a new vendor_
 * _Fill in the fields for vendor information and submit_
+* _You can then click into that vendor to see their orders and you can click to add orders to that vendor as well_
 * _If you would like to run the tests for this project use the command "cd .." and then the command cd "VendorOrderTracker.Tests"_
 * _Next use the command "dotnet restore"_
 * _Now use the command "dotnet test" to run all of the the tests for this project and see the results in the terminal_
 
 
-_Note: when using the commands listed above, do not include the quotation marks. They are used here for readability._
+_Note: when using the commands listed above, do not include the quotation marks"". They are used here for readability._
 
 ## Known Bugs
 
